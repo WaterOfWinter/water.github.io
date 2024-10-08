@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>CS50笔记</title>
+      <link href="/water.github.io/2024/10/07/CS50%E7%AC%94%E8%AE%B0/"/>
+      <url>/water.github.io/2024/10/07/CS50%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CS50"><a href="#CS50" class="headerlink" title="CS50"></a>CS50</h1><h2 id="Lecture4-–-memory"><a href="#Lecture4-–-memory" class="headerlink" title="Lecture4 – memory"></a>Lecture4 – memory</h2><p>众所周知，图像由像素组成，但在我们能在编写能够操作这类图像代码之前，我们需要新的语法来导航文件。</p><p>如何储存像图像一样的信息呢？</p><p><img src="https://s1.vika.cn/space/2024/10/08/1415bcccbbaa497890546fdd554e8753" alt="屏幕截图 2024-10-07 210107"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CS50 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/water.github.io/2024/10/03/test/"/>
       <url>/water.github.io/2024/10/03/test/</url>
