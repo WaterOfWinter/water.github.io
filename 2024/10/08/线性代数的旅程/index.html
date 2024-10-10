@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>线性代数的旅程 | Water's study corner</title><meta name="author" content="water"><meta name="copyright" content="water"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第一章 – 线性代数的本质哔哩哔哩上《线性代数的本质》的一些笔记 原视频链接：01 - 向量究竟是什么？_哔哩哔哩_bilibili “BV1ys411472E” 第一节 — 向量究竟是什么？从物理的角度来看，向量是空间里的箭头，决定一个向量的是它的长度和它所指的方向 从计算机的角度来看，向量是有序的数字列表，如下图所示  物理的角度与计算机的区别在于： 物理方面注重空间上的描述 计算机方面注重数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性代数的旅程">
+<meta property="og:url" content="https://waterofwinter.github.io/water.github.io/2024/10/08/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E6%97%85%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Water&#39;s study corner">
+<meta property="og:description" content="第一章 – 线性代数的本质哔哩哔哩上《线性代数的本质》的一些笔记 原视频链接：01 - 向量究竟是什么？_哔哩哔哩_bilibili “BV1ys411472E” 第一节 — 向量究竟是什么？从物理的角度来看，向量是空间里的箭头，决定一个向量的是它的长度和它所指的方向 从计算机的角度来看，向量是有序的数字列表，如下图所示  物理的角度与计算机的区别在于： 物理方面注重空间上的描述 计算机方面注重数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://waterofwinter.github.io/water.github.io/images/121512457_p0_master1200.jpg">
+<meta property="article:published_time" content="2024-10-08T08:18:13.000Z">
+<meta property="article:modified_time" content="2024-10-09T14:26:01.325Z">
+<meta property="article:author" content="water">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://waterofwinter.github.io/water.github.io/images/121512457_p0_master1200.jpg"><link rel="shortcut icon" href="/water.github.io/"><link rel="canonical" href="https://waterofwinter.github.io/water.github.io/2024/10/08/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E6%97%85%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/water.github.io/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/water.github.io/',
+  algolia: undefined,
+  localSearch: {"path":"/water.github.io/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '线性代数的旅程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-09 22:26:01'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/water.github.io/images/117299596_p0_square1200.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/water.github.io/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/water.github.io/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/water.github.io/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/water.github.io/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/water.github.io/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/water.github.io/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/water.github.io/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/water.github.io/images/121512457_p0_master1200.jpg')"><nav id="nav"><span id="blog-info"><a href="/water.github.io/" title="Water's study corner"><span class="site-name">Water's study corner</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/water.github.io/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/water.github.io/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/water.github.io/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/water.github.io/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/water.github.io/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">线性代数的旅程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-08T08:18:13.000Z" title="发表于 2024-10-08 16:18:13">2024-10-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-09T14:26:01.325Z" title="更新于 2024-10-09 22:26:01">2024-10-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">777</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="线性代数的旅程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一章-–-线性代数的本质"><a href="#第一章-–-线性代数的本质" class="headerlink" title="第一章 – 线性代数的本质"></a>第一章 – 线性代数的本质</h1><p>哔哩哔哩上《线性代数的本质》的一些笔记</p>
+<p>原视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ys411472E?p=2&vd_source=52cc25d7b185f522bb256efa0f7cca48">01 - 向量究竟是什么？_哔哩哔哩_bilibili</a></p>
+<p>“BV1ys411472E”</p>
+<h2 id="第一节-—-向量究竟是什么？"><a href="#第一节-—-向量究竟是什么？" class="headerlink" title="第一节 — 向量究竟是什么？"></a>第一节 — 向量究竟是什么？</h2><p>从物理的角度来看，向量是空间里的箭头，决定一个向量的是它的长度和它所指的方向</p>
+<p>从计算机的角度来看，向量是有序的数字列表，如下图所示</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/WaterOfWinter/markdown_pic@main/2024/10%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-08%20182113.png" alt="屏幕截图 2024-10-08 182113"></p>
+<p>物理的角度与计算机的区别在于：</p>
+<p>物理方面注重空间上的描述</p>
+<p>计算机方面注重数据的有序</p>
+<p>而数学需要去概括且结合这两种观点：向量可以是任何东西，只要保证两个向量相加以及向量相乘是有意义的即可。（向量加法与向量乘法贯彻线性代数始终，十分重要）</p>
+<p>几何方面（对应物理角度）：考虑一个箭头落在某个坐标系中，并且箭头起点位于原点，与物理角度不同，物理箭头起点可以落在空间任何位置</p>
+<p>代数方面（对应计算机方面）：用以下方式来表示向量（下图所示）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/WaterOfWinter/markdown_pic@main/2024/10%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-08%20184207.png" alt="屏幕截图 2024-10-08 184207"></p>
+<p>且向量与坐标以如下形式区分开</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/WaterOfWinter/markdown_pic@main/2024/10%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-08%20184325.png" alt="屏幕截图 2024-10-08 184325"></p>
+<p>向量加法 –&gt; 首尾相加，不做过多描述，图解如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/WaterOfWinter/markdown_pic@main/2024/10%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-08%20184806.png" alt="屏幕截图 2024-10-08 184806"></p>
+<p>向量相乘 –&gt; 向量的缩放，缩放的系数称为标量，图解如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/WaterOfWinter/markdown_pic@main/2024/10%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-08%20184943.png" alt="屏幕截图 2024-10-08 184943"></p>
+<h2 id="第二节-—-线性组合，张成的空间与基"><a href="#第二节-—-线性组合，张成的空间与基" class="headerlink" title="第二节 — 线性组合，张成的空间与基"></a>第二节 — 线性组合，张成的空间与基</h2><p>怎么用有限的向量来表示无限的空间呢？（以下那二维空间举例 –&gt; x-y）</p>
+<p>在了解了向量加法与向量数乘，我们可以发现不重合的两个向量似乎可以做到！</p>
+<p>这两个特殊的向量被称为坐标系的基（basis of a coordinste system）</p>
+<p>在x-y坐标系上最特殊的莫过于（1，0）与（0， 1）了。</p>
+<p>两个数乘向量的和被称为这两个向量的线性组合。</p>
+<p>线性这个词哪里来？有一个不是它的根源的说法 – 固定其中一个标量，让其中一个标量自由变化，所产生的向量终点会描出一条直线。</p>
+<p>如果你让两个标量同时自由变化，考虑所有可能得到的向量，有3种情况：</p>
+<p>1&gt; 当两个向量不重合或不在一条直线上，线性组合可以到达平面中的任意一点‘</p>
+<p>2&gt; 倘若恰好在一条直线上，所产生的终点被限制在一条过原点的直线上</p>
+<p>3&gt;更极端的情况，两个向量都是零向量，那无论如何线性组合，最终的结果都只会在原点</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:/Users/28603/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-09%20221517.png" alt="屏幕截图 2024-10-09 221517"></p>
+<p>所有可以表示为给定向量线性组合的向量的集合，被称为<strong>给定向量张成的空间</strong>（the span of those two vectors）</p>
+<p>当空间向量多到看不清时，可以仅仅保留终点。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:/Users/28603/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-10-09%20222059.png" alt="屏幕截图 2024-10-09 222059"></p>
+<p>当有一个向量对张成空间没有贡献，我们称为“线性相关”。</p>
+<p>若没有，我们称为“线性无关”。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://waterofwinter.github.io/water.github.io">water</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://waterofwinter.github.io/water.github.io/2024/10/08/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E6%97%85%E7%A8%8B/">https://waterofwinter.github.io/water.github.io/2024/10/08/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E6%97%85%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://waterofwinter.github.io/water.github.io" target="_blank">Water's study corner</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/water.github.io/tags/%E6%95%B0%E5%AD%A6/">数学</a></div><div class="post_share"><div class="social-share" data-image="/water.github.io/images/121512457_p0_master1200.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/water.github.io/2024/10/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E6%97%85%E7%A8%8B/" title="数据结构的旅程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/water.github.io/images/121512457_p0_master1200.jpg" onerror="onerror=null;src='/water.github.io/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据结构的旅程</div></div></a></div><div class="next-post pull-right"><a href="/water.github.io/2024/10/07/CS50%E7%AC%94%E8%AE%B0/" title="CS50笔记"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/water.github.io/images/121512457_p0_master1200.jpg" onerror="onerror=null;src='/water.github.io/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">CS50笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/water.github.io/images/117299596_p0_square1200.jpg" onerror="this.onerror=null;this.src='/water.github.io/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">water</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/water.github.io/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/water.github.io/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/water.github.io/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/water.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/water-blog" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2860366719@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Welcome to water's study corner</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E2%80%93-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-text">第一章 – 线性代数的本质</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%E2%80%94-%E5%90%91%E9%87%8F%E7%A9%B6%E7%AB%9F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">第一节 — 向量究竟是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E2%80%94-%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88%EF%BC%8C%E5%BC%A0%E6%88%90%E7%9A%84%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%9F%BA"><span class="toc-text">第二节 — 线性组合，张成的空间与基</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By water</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/water.github.io/js/utils.js?v=4.13.0"></script><script src="/water.github.io/js/main.js?v=4.13.0"></script><script src="/water.github.io/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/water.github.io/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
